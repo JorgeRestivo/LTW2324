@@ -1,0 +1,79 @@
+/* chat.css */
+
+@import 'fonts.css';
+@import 'header.css';
+@import 'footer.css';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.chat-box {
+    flex: 1; /* Allow the chat box to grow and fill the available space */
+    overflow-y: auto; /* Enable vertical scrolling for overflow content */
+    height: calc(80vh - 150px);
+    padding: 10px;
+    margin: 10px;
+        /* Hide scrollbar for IE, Edge and Firefox */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    
+    /* Hide scrollbar for Chrome, Safari and Opera */
+.scrollable-container::-webkit-scrollbar {
+        display: none;
+    }
+
+
+.chat-messages {
+    padding: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+    background-color: #ffffff; /* Set background color */
+    padding: 0.5rem;
+    border-radius: 10px; /* Add border radius */
+}
+
+.message strong {
+    color: #7F27FF;
+}
+
+.chat-form {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Set background color */
+    border-top: 1px solid #dddddd; /* Add top border */
+}
+
+.chat-form textarea {
+    flex: 1; /* Fill remaining space */
+    margin-right: 1rem;
+    padding: 0.8rem;
+    font-size: 16px;
+    color: #333333;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-radius: 5px; /* Add border radius */
+}
+
+.chat-form button {
+    width: 150px;
+    height: 50px;
+    background-color: #7F27FF;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    transition: .3s;
+}
+
+.chat-form button:hover {
+    background-color: #FF8911;
+    transform: scale(1.05, 1);
+}

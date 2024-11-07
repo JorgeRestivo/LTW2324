@@ -1,0 +1,55 @@
+/* Profile Container */
+.profileContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile Heading */
+.profileContainer h1 {
+    text-align: center;
+}
+
+/* Profile Picture */
+.profilePicture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Edit Profile Form */
+.editProfile form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Input Fields */
+.editProfile input[type="text"],
+.editProfile input[type="email"],
+.editProfile input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Error Messages */
+.editProfile div {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Submit Button */
+.editProfile input[type="submit"] {
+    width: 106%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editProfile input[type="submit"]:hover {
+    background-color: #0056b3;
+}
